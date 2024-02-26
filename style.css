@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-family: helvetica;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* reusable */
+.heading4 {
+  font-size: 64px;
+  color: #292626;
+  font-weight: bold;
+  transition: all 1s;
+}
+.heading3 {
+  font-size: 100px;
+  color: #d82222;
+  transition: all 1s;
+}
+.paragraph {
+  padding: 1em;
+  font-size: 32px;
+  color: #292626;
+  opacity: 75%;
+  transition: all 1s;
+}
+
+/* Hero */
+article {
+  margin: 0%;
+  width: 100%;
+  height: 40em;
+  background-color: #f2f2f2;
+  text-align: center;
+  align-items: center;
+  opacity: 0%;
+  transition: all 3s;
+  position: relative;
+  /*z-index: -2;*/
+}
+.icon {
+  transition: all 0.2s;
+}
+.icon:hover {
+  transform: scale(1.5) translate(0px, -10px) !important;
+}
+
+#mainTitle {
+  padding-top: 3em;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 64px;
+  color: #000000;
+  transition: all 3s;
+}
+#subtitle {
+  font-family: "Helvetica Neue";
+  font-weight: 100;
+  src: url(helveticaneue-ultrathin.woff);
+  font-size: 125px;
+  color: #d82222;
+  transition: all 0.2s;
+}
+.socials {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+@media only screen and (max-width: 810px) {
+  #mainTitle {
+    font-size: 18px;
+  }
+  #subtitle {
+    font-size: 58px;
+  }
+  article {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+/* Recap */
+.whatstedx {
+  padding: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+/* Recap */
+.recap {
+  padding: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  transition: all 0.2s;
+}
+
+@media only screen and (max-width: 1000px) {
+  .recap {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 3em;
+  }
+  .whatstedx {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 3em;
+  }
+  .heading4 {
+    font-size: 32px;
+  }
+  .paragraph {
+    font-size: 16px;
+  }
+  #recapleft {
+    width: 100%;
+  }
+  .heading3 {
+    font-size: 56px;
+  }
+  .teme {
+    font-size: 3rem;
+  }
+  .sponser-h {
+    height: 64px;
+  }
+}
+
+/* Theme */
+.theme {
+  width: 100%;
+  text-align: center;
+  transition: all 1s;
+}
+.teme {
+  margin-top: 40px;
+  transition: all 1s;
+}
+.teme:hover {
+  transition: all 1s;
+  transform: scale(1.2, 1.2);
+}
+
+/* Sponsers */
+.sponsers {
+  padding: 5em;
+}
+
+.sponsersWrap {
+  padding: 2em;
+  text-align: center;
+  gap: 100px;
+}
+
+/* Event table */
+.event {
+  text-align: center;
+}
+
+table {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.2s;
+}
+
+table th {
+  font-size: 55px;
+  padding: 10px;
+  background-color: #d82222;
+  color: whitesmoke;
+}
+th {
+  border: none;
+  border-collapse: collapse;
+}
+td {
+  border: none;
+  border-collapse: collapse;
+  font-size: 45px;
+  padding: 10px;
+  text-align: center;
+}
+
+table .tab:nth-child(even) {
+  background-color: #66646492;
+}
+table .tab1:nth-child(odd) {
+  background-color: #66646492;
+}
+@media only screen and (max-width: 400px) {
+  table th {
+    font-size: 35px;
+  }
+  td {
+    font-size: 25px;
+  }
+}
+
+/* Speakers */
+.speakers {
+  text-align: center;
+  padding: 5em;
+  transition: all 1s;
+}
+
+.speakers .cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: minmax(0, 1fr);
+  width: 100%;
+  justify-content: space-between;
+}
+
+.speaker {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 2em;
+  padding: 2em;
+  background-color: rgba(179, 184, 184, 0.4);
+  border-radius: 5px;
+  /* border: 5px solid black; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
+
+.speaker:hover {
+  translate: 0px -20px;
+  transition: all 0.2s;
+  background-color: #292626b0;
+}
+
+.speaker img {
+  margin-bottom: 1em;
+  border-radius: 1rem;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.speaker .name {
+  font-size: 40px;
+  margin-bottom: 1em;
+  color: black;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1250px) {
+  .speakers {
+    padding: 3em;
+  }
+
+  .speakers .cards {
+    grid-template-columns: auto;
+  }
+  .speaker {
+    width: 80%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .speaker:hover {
+    translate: 0px 20px;
+    background-color: rgba(179, 184, 184, 0.4);
+  }
+}
+
+.particle {
+  background-color: #d82222;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: enlarge ease-in-out 2.5s;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes enlarge {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 2;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  20%,
+  60% {
+    transform: translate(-7px, -7px);
+  }
+  40%,
+  80% {
+    transform: translate(-7px, 7px);
+  }
+
+  10%,
+  50%,
+  90% {
+    transform: translate(7px, 7px);
+  }
+
+  30%,
+  70% {
+    transform: translate(7px, -7px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+footer {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border-top: 2px rgba(179, 184, 184, 0.4) solid;
+  padding: 5em 5em 1em 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+footer .heading3 {
+  font-size: 50px;
+  margin-bottom: 1rem;
+}
+
+footer .heading4 {
+  font-size: 30px;
+  margin-bottom: 4em;
+}
+
+footer .sub-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.buy-tickets {
+  background-color: #d82222;
+  border-radius: 90px;
+  padding: 1em 1em 1em 1em;
+  font-size: 35px;
+  color: white;
+  height: max-content;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+.buy-tickets:hover {
+  translate: 0px -10px;
+  background-color: #292626;
+  transition: all 0.2s;
+}
+
+footer span {
+  color: grey;
+}
+
+@media only screen and (max-width: 1000px) {
+  footer {
+    flex-direction: column;
+  }
+  footer span {
+    margin-bottom: 1em;
+  }
+  .buy-tickets {
+    font-size: 15px;
+  }
+  footer {
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
